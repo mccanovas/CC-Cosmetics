@@ -19,84 +19,90 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
-<body>
+<body class="margenesBody">
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="./images/logoBlanco.png" alt="" width="220" height="60" class="d-inline-block align-text-top"></a>
-                  </div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="#">Home</a>
-                  <a class="nav-link" href="#">Nosotros</a>
-                  <a class="nav-link" href="#">Productos</a>
-                  <a class="nav-link" href="#">Tiendas</a>
+                    <a class="navbar-brand" href="#"><img src="./images/logoBlanco.png" alt="" width="20%" height="5%"
+                            class="d-inline-block align-text-top"></a>
                 </div>
-              </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="./index.html">Home</a>
+                        <a class="nav-link" href="./pages/us.html">Nosotros</a>
+                        <a class="nav-link" href="./pages/products.html">Productos</a>
+                        <a class="nav-link" href="./pages/stores.html">Tiendas</a>
+                    </div>
+                </div>
             </div>
-          </nav>
+        </nav>
         <h1> Bienvenido a CC Cosmetics</h1>
     </header>
     <!-- Formulario de contacto-->
-    <div>
-        <h2>¿Te podemos ayudar? ¡Contáctanos!</h2>
-        <form action="/" method="post" class="row g-3">
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Nombre</label>
-                <input type="name" class="form-control" id="name" required>
-            </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" required>
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">País</label>
-                <select name="País" class="form-select">
-                    <option value="argentina">Argentina</option>
-                    <option value="brasil">Brasil</option>
-                    <option value="chile">Chile</option>
-                    <option value="colombia">Colombia</option>
-                    <option value="mexico">México</option>
-                    <option value="uruguay">Uruguay</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <label for="inputZip" class="form-label">Código postal</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12 input-group">
-                <span class="input-group-text">Escribe aquí tu consulta:</span>
-                <textarea class="form-control" aria-label="With textarea" required></textarea>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input btn-secondary" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label" for="gridCheck">
-                        Acepto los Términos y Condiciones.
-                    </label>
+    <div class="margenesNav flexFormulario">
+
+        <div class="margenForm">
+            <h2>¿Te podemos ayudar? ¡Contáctanos!</h2>
+            <form action="/" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Nombre</label>
+                    <input type="name" class="form-control" id="name" required>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input btn-secondary" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Acepto que quiero recibir novedades y promociones de CC Cosmetics por mail.
-                    </label>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" required>
                 </div>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-secondary">Enviar</button>
-            </div>
-        </form>
-    </div>
-    <div>
-        <img src="../images/cliente.jpg" alt="cliente" class="imagenForm">
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">País</label>
+                    <select name="País" class="form-select">
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="mexico">México</option>
+                        <option value="uruguay">Uruguay</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Código postal</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12 input-group">
+                    <span class="input-group-text">Escribe aquí tu consulta:</span>
+                    <textarea class="form-control" aria-label="With textarea" required></textarea>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input btn-secondary" type="checkbox" id="gridCheck" required>
+                        <label class="form-check-label" for="gridCheck">
+                            Acepto los Términos y Condiciones.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input btn-secondary" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Acepto que quiero recibir novedades y promociones de CC Cosmetics por mail.
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <img src="../images/cliente.jpg" alt="cliente" class="imagenForm">
+        </div>
     </div>
     <!--Footer-->
     <div>
@@ -150,4 +156,5 @@
         <script src="./scripts/index.js"></script>
     </div>
 </body>
+
 </html>

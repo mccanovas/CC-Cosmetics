@@ -1,0 +1,17 @@
+/*Reinicios generales*/
+* {
+    margin:0;padding:0; position: relative;
+  font-family: 'Public Sans', sans-serif;
+
+  }
+  a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(104, 102, 102)
+  }
+.degrade {
+  background: rgb(218,218,218);
+  background: linear-gradient(90deg, rgba(218,218,218,1) 0%, rgba(237,237,237,1) 100%);
+}

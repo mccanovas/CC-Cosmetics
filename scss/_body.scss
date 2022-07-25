@@ -1,3 +1,26 @@
-.fer {
-    text-align: center;
+/*Menu Nav*/
+.imagenLogo {
+    width: 55%;
+    height: 15%;
+}
+.menuNav {
+    text-align: right;
+}
+//Mixin
+@mixin margenNav ($margenes) {
+    margin: $margenes;
+}
+.margenesBody {
+    @include margenNav (6rem 2rem 2rem 2rem)
+    } 
+/*Formulario contacto*/
+.margenForm {
+    margin: 0rem 2rem;
+}
+.flexFormulario {
+    display: flex;
+    flex-direction: row;
+}
+.imagenForm {
+    width: auto;
 }

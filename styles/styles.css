@@ -1,2 +1,39 @@
-.fer {
-  text-align: center; }
+/*Reinicios generales*/
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Public Sans', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  color: #686666; }
+
+.degrade {
+  background: #dadada;
+  background: linear-gradient(90deg, #dadada 0%, #ededed 100%); }
+
+/*Menu Nav*/
+.imagenLogo {
+  width: 55%;
+  height: 15%; }
+
+.menuNav {
+  text-align: right; }
+
+.margenesBody {
+  margin: 6rem 2rem 2rem 2rem; }
+
+/*Formulario contacto*/
+.margenForm {
+  margin: 0rem 2rem; }
+
+.flexFormulario {
+  display: flex;
+  flex-direction: row; }
+
+.imagenForm {
+  width: auto; }
