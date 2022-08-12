@@ -1,80 +1,10 @@
-.card-body{
-    margin: 0.5rem;
+.containerCarrito {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 1px;
 }
 
-  .containerProd {
-    width: 280px;
-    height: 500px;
-    margin: 30px auto;
-  }
-  
-  .cardProd {
-    border-radius: 25px;
-    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
-  }
-  
-  .card-head {
-    position: relative;
-    height: 252px;
-    background: #e2e2e2;
-    border-radius: 25px 25px 0 0;
-  }
-  
-  .product-img {
-    width: 150px;
-    height: 200px;
-    text-align: center;
-    margin: 2rem;
-  }
-  .card-body {
-    height: 255px;
-    background: rgb(210, 207, 207);
-    border-radius: 0 0 25px 25px;
-  }
-  
-  .product-title {
-    padding: 20px 20px 5px 20px;
-    display: block;
-    font-size: 17px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  
-  .product-title b {
-    font-weight: 900;
-    letter-spacing: 0px;
-  }
-  
-  .price {
-    position: relative;
-    font-size: 16px;
-    font-weight: 300;
-    color: #fff;
-    background: #252525;
-    padding: 2px 5px;
-    border-radius: 4px;
-    top: -2px;
-    margin-left: 5px;
-  }
-  
-  .product-caption {
-    display: block;
-    padding: 0 20px;
-    font-size: 10px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-
-  .counterCSS {
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-    margin-left: 80px;
-  }
-  .product-color h4 {
-    font-size: 14px;
-    padding: 0 21px;
-    margin-top: 30px;
-    padding-bottom: 5px;
-  }
+.containerProductos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

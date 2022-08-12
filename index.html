@@ -36,95 +36,32 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" href="./index.html">Home</a>
-                        <a class="nav-link" href="./pages/products.html">Productos</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </div>
                 </div>
             </div>
         </nav>
         <h1> ¡Bienvenida a CC Cosmetics!</h1>
     </header>
-    <!--Cards nosotros-->
-    <div>
-        <h2 class="titulosBody">Sobre nosotros</h2>
-        <div class="card offset-1 ">
-            <div class="card-body">
-                <h5 class="card-title">Nuestro equipo</h5>
-                <p class="card-text">Todas las Edades, Todas las Razas, Todos los Sexos... Una marca de maquillaje y
-                    productos
-                    para el cuidado de la piel que aspira a marcar tendencia en backstages y Fashion Weeks de todo el
-                    mundo. Somos
-                    la compañía que crea volumen en las pestañas y oportunidades en las vidas, que combate estereotipos
-                    y reconoce
-                    el poder de los labios. Somos la compañía que alza la voz por la independencia económica de cada
-                    persona que
-                    revende nuestra marca. También somos la compañía que desarrolla productos de belleza para todas,
-                    apoyando a
-                    millones de emprendedoras en todo el mundo. Creemos en la belleza, en la innovación y en la
-                    libertad.</p>
-            </div>
-            <img src="./images/modelos.webp" class="card-img-bottom" alt="modelos">
-        </div>
-        <div class="card offset-1">
-            <div class="card-body">
-                <h5 class="card-title">¿Cuál es nuestro objetivo?</h5>
-                <p class="card-text">Nuestro enfoque es ofrecer productos elegantes y de buena calidad, que puedan ser
-                    utilizados por todas las personas para cuidar su piel, sabiendo que provienen directamente de
-                    componentes
-                    naturales y que no se encuentran testeados en animales. Entre las innovaciones de esta etapa, cabe
-                    destacar el
-                    uso de herramientas de silicio (softwares capaces de predecir qué tan peligroso puede ser un
-                    ingrediente en
-                    función de su estructura molecular) y modelos 3D de piel y córnea equivalentes que permiten
-                    investigar la
-                    irritación y las alergias sin realizar pruebas en animales.</p>
-            </div>
-            <img src="./images/model.jpg" class="card-img-bottom" alt="modelo roja">
-        </div>
+       <!--Este es el div titulo-->
+       <div class="container">
+        <h2>Detalle de productos</h2>
     </div>
-    <!--Tabla de sucursales-->
-    <section class="margenesTabla">
-        <h2>Sucursales de CC Cosmetics</h2>
-        <table border="1" class="table fontTabla">
-            <tr class="table-dark">
-                <td>
-                    <h2 class="fontTabla">Sucursal</h2>
-                </td>
-                <td>
-                    <h2 class="fontTabla">Dirección</h2>
-                </td>
-                <td>
-                    <h2 class="fontTabla">Horario de atención</h2>
-                </td>
-                <td>
-                    <h2 class="fontTabla">Teléfono</h2>
-                </td>
-            </tr>
-            <tr class="table-light">
-                <td>Dot Baires Shopping</td>
-                <td>Vedia 3600, C1430 CABA</td>
-                <td>De 12:00hs a 21:00hs</td>
-                <td>3254-0987</td>
-            </tr>
-            <tr class="table-secondary">
-                <td>Caballito Shopping Center</td>
-                <td>Rivadavia 5108, C1424 CABA</td>
-                <td>De 12:00hs a 21:00hs</td>
-                <td>2576-1943</td>
-            </tr>
-            <tr class="table-light">
-                <td>Recoleta Urban Mall</td>
-                <td>Vicente López 2050, C1126 CABA</td>
-                <td>De 12:00hs a 21:00hs</td>
-                <td>9540-3678</td>
-            </tr>
-        </table>
-    </section>
-    <div class="sucursalesMapa">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qIzF4egREuIK1mQVu3xBVWBXjsMBrsLG&ehbc=2E312F"
-            width="640" height="480"></iframe>
+    <div class="containerCarrito">
+        <div class="containerProductos">
+                <!--El contenido de este div se genera via DOM-->
+                <div id="container-general">
+                    <section id="section-productos"></section>                </div>
+                </div>
+                     <!--Resumen lateral de compra-->
+    <aside class="containerCompra">
+        <h2>Resumen de compra</h2>
+        <section id="section-carrito"></section>
+    </aside>
+                
     </div>
     <!-- Formulario de contacto-->
-    <div class="margenesTabla flexFormulario">
+    <div class="margenesTabla flexFormulario"id="contacto">
 
         <div class="margenForm">
             <h2>¿Te podemos ayudar? ¡Contáctanos!</h2>
@@ -208,7 +145,7 @@
         <div class="container">
             <footer class="py-5">
                 <div class="d-flex justify-content-between py-4 my-4 border-top">
-                    <p>&copy; 2021 CC Cosmetics Argentina, Inc. Todos los derechos reservados.</p>
+                    <p>&copy; 2022 CC Cosmetics Argentina, Inc. Todos los derechos reservados.</p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a class="link-dark" href="https://twitter.com/CCCosmetics3"><svg class="bi"
                                     width="24" height="24">
@@ -232,7 +169,7 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
         <!--Mi script-->
-        <script src="./scripts/index.js"></script>
+        <script src="./scripts/products.js"></script>
     </div>
 </body>
 
