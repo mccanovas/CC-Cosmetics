@@ -1,13 +1,3 @@
-//Declaro mis productos en un array de objetos
-const productos = [
-  { id: 1, tipo: "Labial", nombre: "Labial Matte Red", precio: 1200, foto: "./images/Lrojo.jpg" },
-  { id: 2, tipo: "Labial", nombre: "Labial Matte Pink", precio: 1200, foto: "./images/Lrosa.jpg" },
-  { id: 3, tipo: "Labial", nombre: "Labial Matte Nude", precio: 1200, foto: "./images/Lnude.jpg" },
-  { id: 4, tipo: "Crema", nombre: "Crema de día", precio: 1800, foto: "./images/cdia.jpg" },
-  { id: 5, tipo: "Crema", nombre: "Crema de noche", precio: 1800, foto: "./images/cnoche.jpg" },
-  { id: 6, tipo: "Crema", nombre: "Crema exfoliante", precio: 2100, foto: "./images/cexf.jpg" },
-]
-
 //inicializo la variable carrito con una funcion para que detecte si existen valores en el storage
 let carrito = cargarCarrito();
 window.addEventListener('load', calcularTotalCarrito);
@@ -42,22 +32,30 @@ botonFinalizar.setAttribute("class", "boton");
 botonFinalizar.onclick = () => { vaciarCarrito() };
 
 // Productos que se muestran en cards
-for (const producto of productos) {
-  let container = document.createElement("div");
-  container.setAttribute("class", "card-product");
-  container.innerHTML = ` <div class="img-container">
-                              <img src="${producto.foto}" alt="${producto.nombre}" class="img-product"/>
-                              </div>
-                              <div class="info-producto">
-                              <p class="font">${producto.nombre}</p>
-                              <strong class="font">$${producto.precio}</strong>
-                              <button class="boton" id="btn${producto.id}"> Agregar al carrito </button>
-                              </div>`;
-  sectionProductos.appendChild(container);
+const lista = document.querySelector('#section-productos')
 
-  //Evento para que los productos se agreguen al carrito al hacer click en el boton
-  document.getElementById(`btn${producto.id}`).onclick = () => agregarAlCarrito(`${producto.id}`);
-}
+fetch('/data.json')
+  .then((res) => res.json())
+  .then((data) => {
+
+    data.forEach((productos) => {
+      const div = document.createElement('div')
+      div.innerHTML = ` <div class="img-container">
+            <img src="${productos.foto}" alt="${productos.nombre}" class="img-product"/>
+            </div>
+            <div class="info-producto">
+            <p class="font">${productos.nombre}</p>
+            <strong class="font">$${productos.precio}</strong>
+            <button class="boton" id="btn${productos.id}"> Agregar al carrito </button>
+            </div>`
+
+      lista.append(div)
+    })
+  })
+
+//Evento para que los productos se agreguen al carrito al hacer click en el boton
+document.getElementById(`btn${producto.id}`).onclick = () => agregarAlCarrito(`${producto.id}`);
+
 
 //Funciones
 function agregarAlCarrito(id) {

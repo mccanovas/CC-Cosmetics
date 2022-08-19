@@ -1,0 +1,8 @@
+[
+    { "id": 1, "tipo": "Labial", "nombre": "Labial Matte Red", "precio": 1200, "foto": "./images/Lrojo.jpg" },
+    { "id": 2, "tipo": "Labial", "nombre": "Labial Matte Pink", "precio": 1200, "foto": "./images/Lrosa.jpg" },
+    { "id": 3, "tipo": "Labial", "nombre": "Labial Matte Nude", "precio": 1200, "foto": "./images/Lnude.jpg" },
+    { "id": 4, "tipo": "Crema", "nombre": "Crema de día", "precio": 1800, "foto": "./images/cdia.jpg" },
+    { "id": 5, "tipo": "Crema", "nombre": "Crema de noche", "precio": 1800, "foto": "./images/cnoche.jpg" },
+    { "id": 6, "tipo": "Crema", "nombre": "Crema exfoliante", "precio": 2100, "foto": "./images/cexf.jpg" }
+  ]
